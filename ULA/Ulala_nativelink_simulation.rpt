@@ -1,0 +1,111 @@
+Info: Start Nativelink Simulation process
+
+========= EDA Simulation Settings =====================
+
+Sim Mode              :  Gate
+Family                :  cycloneivgx
+Quartus root          :  c:/altera/14.1/quartus/bin64/
+Quartus sim root      :  c:/altera/14.1/quartus/eda/sim_lib
+Simulation Tool       :  modelsim-altera
+Simulation Language   :  vhdl
+Version               :  93
+Simulation Mode       :  GUI
+Sim Output File       :  Ulala.vho
+Sim SDF file          :  Ulala__vhdl.sdo
+Sim dir               :  simulation\modelsim
+
+=======================================================
+
+Info: Starting NativeLink simulation with ModelSim-Altera software
+Sourced NativeLink script c:/altera/14.1/quartus/common/tcl/internal/nativelink/modelsim.tcl
+Warning: File Ulala_run_msim_gate_vhdl.do already exists - backing up current file as Ulala_run_msim_gate_vhdl.do.bak11
+Probing transcript
+ModelSim-Altera Info: # Reading C:/altera/14.1/modelsim_ase/tcl/vsim/pref.tcl
+ModelSim-Altera Info: # do Ulala_run_msim_gate_vhdl.do
+ModelSim-Altera Info: # if {[file exists gate_work]} {
+ModelSim-Altera Info: # 	vdel -lib gate_work -all
+ModelSim-Altera Info: # }
+ModelSim-Altera Info: # vlib gate_work
+ModelSim-Altera Info: # vmap work gate_work
+ModelSim-Altera Info: # Model Technology ModelSim PE vmap 10.3c Lib Mapping Utility 2014.09 Sep 20 2014
+ModelSim-Altera Info: # vmap -modelsim_quiet work gate_work 
+ModelSim-Altera Info: # Copying C:/altera/14.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+ModelSim-Altera Info: # Modifying modelsim.ini
+ModelSim-Altera Warning: # ** Warning: Copied C:/altera/14.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini.
+ModelSim-Altera Info: #          Updated modelsim.ini.
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: # vcom -93 -work work {Ulala.vho}
+ModelSim-Altera Info: # Model Technology ModelSim ALTERA vcom 10.3c Compiler 2014.09 Sep 20 2014
+ModelSim-Altera Info: # Start time: 19:40:51 on Jun 22,2018
+ModelSim-Altera Info: # vcom -reportprogress 300 -93 -work work Ulala.vho 
+ModelSim-Altera Info: # -- Loading package STANDARD
+ModelSim-Altera Info: # -- Loading package TEXTIO
+ModelSim-Altera Info: # -- Loading package std_logic_1164
+ModelSim-Altera Info: # -- Loading package VITAL_Timing
+ModelSim-Altera Info: # -- Loading package VITAL_Primitives
+ModelSim-Altera Info: # -- Loading package cycloneiv_atom_pack
+ModelSim-Altera Info: # -- Loading package cycloneiv_components
+ModelSim-Altera Info: # -- Compiling entity Ulala
+ModelSim-Altera Info: # -- Compiling architecture structure of Ulala
+ModelSim-Altera Info: # End time: 19:40:56 on Jun 22,2018, Elapsed time: 0:00:05
+ModelSim-Altera Info: # Errors: 0, Warnings: 0
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: vsim work.ulala
+ModelSim-Altera Info: # vsim -gui -l msim_transcript -do "Ulala_run_msim_gate_vhdl.do" 
+ModelSim-Altera Info: # Start time: 19:41:06 on Jun 22,2018
+ModelSim-Altera Info: # Loading std.standard
+ModelSim-Altera Info: # Loading std.textio(body)
+ModelSim-Altera Info: # Loading ieee.std_logic_1164(body)
+ModelSim-Altera Info: # Loading ieee.vital_timing(body)
+ModelSim-Altera Info: # Loading ieee.vital_primitives(body)
+ModelSim-Altera Info: # Loading cycloneiv.cycloneiv_atom_pack(body)
+ModelSim-Altera Info: # Loading cycloneiv.cycloneiv_components
+ModelSim-Altera Info: # Loading work.ulala(structure)
+ModelSim-Altera Info: # Loading ieee.std_logic_arith(body)
+ModelSim-Altera Info: # Loading cycloneiv.cycloneiv_io_obuf(arch)
+ModelSim-Altera Info: # Loading cycloneiv.cycloneiv_io_ibuf(arch)
+ModelSim-Altera Info: # Loading cycloneiv.cycloneiv_lcell_comb(vital_lcell_comb)
+ModelSim-Altera Warning: # ** Warning: Design size of 17608 statements exceeds ModelSim Altera Starter recommended capacity.
+ModelSim-Altera Info: # Expect performance to be adversely affected.
+ModelSim-Altera Info: add wave -position insertpoint  \
+ModelSim-Altera Info: sim:/ulala/A \
+ModelSim-Altera Info: sim:/ulala/B \
+ModelSim-Altera Info: sim:/ulala/CarryOut \
+ModelSim-Altera Info: sim:/ulala/Comando \
+ModelSim-Altera Info: sim:/ulala/HEX0 \
+ModelSim-Altera Info: sim:/ulala/Overflow \
+ModelSim-Altera Info: sim:/ulala/\\Out\\
+ModelSim-Altera Info: force -freeze sim:/ulala/A 0010 0
+ModelSim-Altera Info: force -freeze sim:/ulala/B 0010 0
+ModelSim-Altera Info: force -freeze sim:/ulala/Comando 1011 0
+ModelSim-Altera Info: run
+ModelSim-Altera Info: run
+ModelSim-Altera Info: run
+ModelSim-Altera Info: run
+ModelSim-Altera Info: # Can't move the Now cursor.
+ModelSim-Altera Info: force -freeze sim:/ulala/A 0011 0
+ModelSim-Altera Info: force -freeze sim:/ulala/B 0011 0
+ModelSim-Altera Info: run
+ModelSim-Altera Info: run
+ModelSim-Altera Info: run
+ModelSim-Altera Info: run
+ModelSim-Altera Info: force -freeze sim:/ulala/A 1101 0
+ModelSim-Altera Info: run
+ModelSim-Altera Info: run
+ModelSim-Altera Info: run
+ModelSim-Altera Info: force -freeze sim:/ulala/B 0011 0
+ModelSim-Altera Info: force -freeze sim:/ulala/B 0010 0
+ModelSim-Altera Info: run -continue
+ModelSim-Altera Info: run -continue
+ModelSim-Altera Info: run -continue
+ModelSim-Altera Info: run -continue
+ModelSim-Altera Info: run -continue
+ModelSim-Altera Info: run -continue
+ModelSim-Altera Info: run -continue
+ModelSim-Altera Info: run
+ModelSim-Altera Info: run
+ModelSim-Altera Info: run
+ModelSim-Altera Info: quit
+ModelSim-Altera Info: # End time: 19:44:17 on Jun 22,2018, Elapsed time: 0:03:11
+ModelSim-Altera Info: # Errors: 1, Warnings: 1
+Info: NativeLink simulation flow was successful

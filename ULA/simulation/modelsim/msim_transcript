@@ -1,0 +1,88 @@
+# Reading C:/altera/14.1/modelsim_ase/tcl/vsim/pref.tcl
+# do Ulala_run_msim_gate_vhdl.do
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Model Technology ModelSim PE vmap 10.3c Lib Mapping Utility 2014.09 Sep 20 2014
+# vmap -modelsim_quiet work gate_work 
+# Copying C:/altera/14.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:/altera/14.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {Ulala.vho}
+# Model Technology ModelSim ALTERA vcom 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 19:40:51 on Jun 22,2018
+# vcom -reportprogress 300 -93 -work work Ulala.vho 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package VITAL_Timing
+# -- Loading package VITAL_Primitives
+# -- Loading package cycloneiv_atom_pack
+# -- Loading package cycloneiv_components
+# -- Compiling entity Ulala
+# -- Compiling architecture structure of Ulala
+# End time: 19:40:56 on Jun 22,2018, Elapsed time: 0:00:05
+# Errors: 0, Warnings: 0
+# 
+vsim work.ulala
+# vsim -gui -l msim_transcript -do "Ulala_run_msim_gate_vhdl.do" 
+# Start time: 19:41:06 on Jun 22,2018
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.vital_timing(body)
+# Loading ieee.vital_primitives(body)
+# Loading cycloneiv.cycloneiv_atom_pack(body)
+# Loading cycloneiv.cycloneiv_components
+# Loading work.ulala(structure)
+# Loading ieee.std_logic_arith(body)
+# Loading cycloneiv.cycloneiv_io_obuf(arch)
+# Loading cycloneiv.cycloneiv_io_ibuf(arch)
+# Loading cycloneiv.cycloneiv_lcell_comb(vital_lcell_comb)
+# ** Warning: Design size of 17608 statements exceeds ModelSim Altera Starter recommended capacity.
+# Expect performance to be adversely affected.
+add wave -position insertpoint  \
+sim:/ulala/A \
+sim:/ulala/B \
+sim:/ulala/CarryOut \
+sim:/ulala/Comando \
+sim:/ulala/HEX0 \
+sim:/ulala/Overflow \
+sim:/ulala/\\Out\\
+force -freeze sim:/ulala/A 0010 0
+force -freeze sim:/ulala/B 0010 0
+force -freeze sim:/ulala/Comando 1011 0
+run
+run
+run
+run
+# Can't move the Now cursor.
+force -freeze sim:/ulala/A 0011 0
+force -freeze sim:/ulala/B 0011 0
+run
+run
+run
+run
+force -freeze sim:/ulala/A 1101 0
+run
+run
+run
+force -freeze sim:/ulala/B 0011 0
+force -freeze sim:/ulala/B 0010 0
+run -continue
+run -continue
+run -continue
+run -continue
+run -continue
+run -continue
+run -continue
+run
+run
+run
+quit
+# End time: 19:44:17 on Jun 22,2018, Elapsed time: 0:03:11
+# Errors: 1, Warnings: 1
